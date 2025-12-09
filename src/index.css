@@ -1,0 +1,44 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+body {
+  background: #f8fafc;
+}
+
+.dark body {
+  background: #020617;
+}
+
+* {
+  transition: all 0.25s ease;
+}
+
+/* Cards */
+.card-hover:hover {
+  transform: translateY(-6px) scale(1.02);
+  box-shadow: 0 18px 35px rgba(0,0,0,0.2);
+}
+
+/* Buttons */
+.btn-primary {
+  background: black;
+  color: white;
+  border-radius: 999px;
+  padding: 10px 16px;
+  font-weight: 600;
+}
+.dark .btn-primary {
+  background: white;
+  color: black;
+}
+
+.btn-secondary {
+  border: 1px solid #ddd;
+  border-radius: 999px;
+  padding: 10px 16px;
+}
+
+button:active {
+  transform: scale(0.95);
+}

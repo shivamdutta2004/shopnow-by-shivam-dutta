@@ -1,0 +1,222 @@
+/* ===== ShopNow Pro Theme (Original Design) ===== */
+
+:root {
+  --primary: #0f172a;
+  --accent: #22c55e;
+  --secondary: #38bdf8;
+  --bg: #f8fafc;
+  --text: #020617;
+  --muted: #64748b;
+}
+
+body {
+  background-color: var(--bg);
+  color: var(--text);
+  font-family: "Inter", system-ui, sans-serif;
+}
+
+/* ===== Buttons ===== */
+.btn-glow {
+  background: linear-gradient(135deg, var(--secondary), var(--accent));
+  color: white;
+  padding: 12px 20px;
+  border-radius: 12px;
+  border: none;
+  cursor: pointer;
+  font-weight: 600;
+  transition: all 0.3s ease;
+}
+
+.btn-glow:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 8px 24px rgba(34, 197, 94, 0.35);
+}
+
+/* ===== Product Card ===== */
+.card-pro {
+  background: white;
+  border-radius: 18px;
+  padding: 14px;
+  box-shadow: 0 10px 30px rgba(15, 23, 42, 0.08);
+  transition: 0.3s ease;
+}
+
+.card-pro:hover {
+  transform: translateY(-6px);
+}
+
+/* ===== Price Badge ===== */
+.price-badge {
+  background: var(--accent);
+  color: white;
+  padding: 6px 10px;
+  border-radius: 999px;
+  font-weight: 700;
+}
+
+/* ===== Section Header ===== */
+.section-title {
+  font-size: 1.4rem;
+  font-weight: 700;
+  color: var(--primary);
+  margin-bottom: 14px;
+}
+
+/* ===== Shimmer Loader ===== */
+.shimmer {
+  width: 100%;
+  height: 200px;
+  border-radius: 12px;
+  background: linear-gradient(
+    100deg,
+    #e5e7eb 40%,
+    #f3f4f6 50%,
+    #e5e7eb 60%
+  );
+  background-size: 200% 100%;
+  animation: shimmer 1.2s infinite;
+}
+
+@keyframes shimmer {
+  to {
+    background-position: -200% 0;
+  }
+}
+/* ===== Product Card Pro ===== */
+
+.product-card {
+  background: white;
+  border-radius: 20px;
+  padding: 16px;
+  width: 240px;
+  box-shadow: 0 12px 30px rgba(15, 23, 42, 0.08);
+  transition: 0.3s ease;
+  position: relative;
+}
+
+.product-card:hover {
+  transform: translateY(-6px);
+}
+
+/* Image */
+.product-image {
+  width: 100%;
+  height: 180px;
+  object-fit: contain;
+  border-radius: 14px;
+  transition: transform 0.3s ease;
+}
+
+.product-card:hover .product-image {
+  transform: scale(1.05);
+}
+
+/* Badge */
+.badge {
+  position: absolute;
+  top: 14px;
+  left: 14px;
+  background: #22c55e;
+  color: white;
+  padding: 4px 10px;
+  font-size: 0.75rem;
+  border-radius: 999px;
+  font-weight: 600;
+}
+
+/* Title */
+.product-title {
+  margin: 12px 0 6px;
+  font-weight: 600;
+  font-size: 0.95rem;
+}
+
+/* Price */
+.product-price {
+  font-weight: 700;
+  color: #0f172a;
+}
+
+/* Action Row */
+.actions {
+  margin-top: 12px;
+  display: flex;
+  gap: 10px;
+}
+/* ===== DARK MODE VARIABLES ===== */
+
+.dark {
+  --bg: #020617;
+  --text: #e5e7eb;
+  --primary: #e5e7eb;
+  --muted: #94a3b8;
+}
+
+/* Global dark background */
+.dark body {
+  background-color: var(--bg);
+  color: var(--text);
+}
+
+/* Cards */
+.dark .card-pro,
+.dark .product-card {
+  background: #020617;
+  box-shadow: 0 12px 30px rgba(148, 163, 184, 0.08);
+}
+
+/* Section headers */
+.dark .section-title {
+  color: #e5e7eb;
+}
+
+/* Category tiles */
+.dark div {
+  color: var(--text);
+}
+
+/* Buttons */
+.dark .btn-glow {
+  background: linear-gradient(135deg, #22c55e, #38bdf8);
+}
+
+/* Badge */
+.dark .badge {
+  background: #38bdf8;
+  color: #020617;
+}
+/* ===== Filter Panel ===== */
+
+.filter-box {
+  background: white;
+  padding: 20px;
+  border-radius: 18px;
+  box-shadow: 0 12px 30px rgba(15,23,42,0.08);
+}
+
+.filter-title {
+  font-weight: 700;
+  margin-bottom: 12px;
+}
+
+.filter-group {
+  margin-bottom: 20px;
+}
+
+.filter-option {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  margin: 6px 0;
+  cursor: pointer;
+}
+
+/* Slider */
+.price-slider {
+  width: 100%;
+}
+
+/* Dark mode support */
+.dark .filter-box {
+  background: #020617;
+}
